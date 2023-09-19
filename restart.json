@@ -1,0 +1,5 @@
+{
+  "watch": ["src"],
+  "exec": "nodemon src/index",
+  "ext": "ts"
+}
