@@ -12,7 +12,8 @@
     "build": "tsc -p tsconfig.build.json",
     "build:watch": "tsc -w -p tsconfig.build.json",
     "build-webpack": "webpack",
-    "start": "node ./build/index.js"
+    "start": "node ./build/index.js",
+    "prepush": "npm run lint"
   },
   "husky": {
     "hooks": {
