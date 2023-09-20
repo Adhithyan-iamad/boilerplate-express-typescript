@@ -35,6 +35,7 @@
     "@types/module-alias": "^2.0.1",
     "@types/node": "^20.4.3",
     "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
     "ts-loader": "^9.4.4",
     "ts-node": "^10.9.1",
     "tslib": "^2.6.1",
