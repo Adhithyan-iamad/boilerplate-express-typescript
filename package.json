@@ -6,11 +6,18 @@
   "scripts": {
     "dev-build": "webpack --config webpack.dev.config.js --watch",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --config restart.json",
+    "start-dev": "nodemon --config restart.json",
     "dev": "nodemon src/index.ts",
     "lint": "eslint . --ext .ts,.tsx",
     "build": "tsc -p tsconfig.build.json",
-    "build:watch": "tsc -w -p tsconfig.build.json"
+    "build:watch": "tsc -w -p tsconfig.build.json",
+    "build-webpack": "webpack",
+    "start": "node ./build/index.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "repository": {
     "type": "git",
